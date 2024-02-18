@@ -4,21 +4,19 @@ class StringBuilder {
   constructor(initialValue) {
     this.#value = initialValue;
   }
-  get value() {
+  getValue() {
     return this.#value;
   }
-  set value(value) {
-      this.#value = value;
-    }
+ 
   padEnd(str) {
-    this.value += str;
+    this.#value += str;
 
    }
   padStart(str) {
     this.#value = str + this.#value;
   }
   padBoth(str) {
-    this.#value = str + this.#value + str;
+    this.#value= str + this.#value + str;
     
   }
    
